@@ -6,12 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter size matrix");
+        System.out.println("Enter size matrixA");
         System.out.println("Enter number of columns: ");
-        int numberOfColumns = scanner.nextInt();
+        int numberOfColumnsMatrixA = scanner.nextInt();
         System.out.println("Enter number of line: ");
-        int numberOfLine = scanner.nextInt();
-        
-
+        int numberOfLinematrixA = scanner.nextInt();
+        int[][] matrixA = matrix.creatureMatrix(numberOfLinematrixA, numberOfColumnsMatrixA);
+        System.out.println("Enter size matrixA");
+        System.out.println("Enter number of columns: ");
+        int numberOfColumnsMatrixB = scanner.nextInt();
+        System.out.println("Enter number of line: ");
+        int numberOfLinematrixB = scanner.nextInt();
+        int[][] matrixB = matrix.creatureMatrix(numberOfColumnsMatrixB, numberOfColumnsMatrixB);
     }
 }
