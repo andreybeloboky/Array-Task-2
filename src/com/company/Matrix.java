@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @param numberOfLine - number of lines in a matrix
  * @return - creature matrix;
  */
-public class matrix {
+public class Matrix {
     public static int[][] creatureMatrix(int numberOfLine, int numberOfColumns) {
         Scanner scanner = new Scanner(System.in);
         int[][] matrix = new int[numberOfLine][numberOfColumns];
