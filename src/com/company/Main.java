@@ -21,12 +21,7 @@ public class Main {
             int[][] matrixB = Matrix.creatureMatrix(numberOfLineMatrixB, numberOfColumnsMatrixB);
             if (numberOfColumnsMatrixA == numberOfLineMatrixB) {
                 int[][] matrixAB = MultiplicationMatrix.calculatorMatrix(matrixA, matrixB);
-                for (int i = 0; i < numberOfLineMatrixA; i++) {
-                    for (int j = 0; j < numberOfColumnsMatrixB; j++) {
-                        System.out.print(" " + matrixAB[i][j] + " ");
-                    }
-                    System.out.println();
-                }
+                ConsoleOutput.arrayOutput(matrixAB);
             } else {
                 System.out.println("Does not meet the matrix multiplication condition");
             }
@@ -35,3 +30,4 @@ public class Main {
         }
     }
 }
+
